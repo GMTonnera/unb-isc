@@ -1,0 +1,12 @@
+TECLAS:
+
+w     --> Move o ícone dos menus para cima;
+s     --> Move o ícone dos menus para baixo;
+space --> Confirma a opção nos menus;
+a     --> Move o carro para a esquerda;
+d     --> Move o carro para a direita;
+x     --> Acelera o carro.
+
+OBSERVAÇÃO: o joogo não funciona com o Caps Lock ativado, 
+uma vez que os caracteres maiúsculos e minúsculos possuem
+valores diferentes na tabela ASCII.

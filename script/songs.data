@@ -1,0 +1,29 @@
+###############################################
+#  File for music data			      #
+#  ISC Set 2021				      #
+#  Ruan Petrus Alves Leite		      #
+###############################################
+.data
+#The music data is represented by a word array with the follow composition:
+#	MUSIC_NOTES:	Address for the array of notes		label + 00
+#	MUSIC_NUM:	number of notes				label + 04
+#	NOTE_CONTER:	keep track of the notes			label + 08
+#	LAST_PLAYED:	time when the last nome was played	label + 12
+#	LAST_DURATION: 	duration of the last note		label + 16
+#	INSTRU_NUM:	Instrument number			label + 20
+#	VOL_NUM:	Volume number				label + 24
+#EX of representation:
+	#Music label: .word MUSIC_NOTES, music_num, note_conter, last_played, last_duration, instru_num, volume_num
+
+#BACK GROUND:	
+M_BG: .word M_BG_NOTES, 29, 0, 0, 0, 81, 60
+
+#SOUND EFFECTS:
+M_COLLISION:	.word M_COLLISION_NOTES, 1, 0, 0, 0, 127, 100
+M_EXPLOSION: .word M_EXPLOSION_NOTES, 1, 0, 0, 0, 127, 100
+
+#MUSIC NOTES:
+#TOKYO DRIFT
+M_BG_NOTES:	.word 60,468, 60,468, 60,468, 60,468, 60,351, 62,351, 65,234, 60,468, 60,468, 60,351, 62,351, 65,234, 60,468, 60,468, 60,351, 62,351, 65,234, 60,468, 60,468, 60,351, 62,351, 65,234, 60,468, 60,468, 60,351, 62,351, 65,234, 60,468, 60,468
+M_EXPLOSION_NOTES: .word 37, 333 	
+M_COLLISION_NOTES: .word 2, 100
